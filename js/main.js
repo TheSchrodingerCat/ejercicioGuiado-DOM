@@ -7,6 +7,8 @@ function translate(){
 
 	var valorEmail = document.getElementById('inputEmail').value;
 	var valorPassword = document.getElementById("inputPassword").value;
+	var printEmail = document.getElementById('correo');
+	var printClave = document.getElementById('clave');
 
 	title.innerHTML = "Por favor inicia sesión";
 	email.placeholder = "Correo Electrónico";
@@ -14,6 +16,7 @@ function translate(){
 	remember.innerHTML = "Recordar datos";
 	button.innerHTML = "Iniciar Sesión";
 
-	document.write(valorEmail);
+	printEmail.innerHTML = email.value;
+	printClave.innerHTML = password.value;
 }
 translate();
